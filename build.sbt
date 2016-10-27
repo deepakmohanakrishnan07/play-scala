@@ -1,6 +1,6 @@
 name := """play-scala"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala, RpmPlugin)
 
@@ -20,6 +20,8 @@ packageDescription := "Simple play app to showcase buidling RPM and storing the 
 rpmRelease := "1"
 
 rpmVendor := "comcast.com"
+
+rpmGroup := Some("Development")
 
 rpmUrl := Some("http://github.com/example/server")
 
